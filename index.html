@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anuj Kashyap | Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!--
+    PROJECT PAGE CONTROLS
+
+    true  = card is clickable
+    false = card stays visible but cannot be clicked
+
+    Change these whenever you are ready to publish a project page.
+  -->
+  <script>
+    const PROJECT_LINKS_ENABLED = {
+      pulsejet: false,
+      momLab: false,
+      nextgen: false,
+      northrop: false,
+      aceAirEngine: false,
+      dmlTa: false
+    };
+  </script>
 </head>
 
 <body>
@@ -12,12 +31,12 @@
     <nav>
       <h2>Anuj Kashyap</h2>
       <div class="nav-links">
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="certifications.html">Certifications</a>
-  <a href="#resume">Resume</a>
-  <a href="#contact">Contact</a>
-</div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
 
     <section class="hero">
@@ -27,137 +46,166 @@
         mechanical design, CFD, manufacturing, and digital engineering.
       </p>
       <div class="hero-buttons">
-  <a class="button" href="#projects">View Projects</a>
-  <a class="button secondary" href="#resume">View Resume</a>
-  <a class="button secondary" href="certifications.html">View Certifications</a>
-</div>
+        <a class="button" href="#projects">View Projects</a>
+        <a class="button secondary" href="#resume">View Resume</a>
+        <a class="button secondary" href="certifications.html">View Certifications</a>
+      </div>
     </section>
   </header>
 
   <main>
     <section id="about" class="about-section">
-  <div class="about-text">
-    <h2>About Me</h2>
+      <div class="about-text">
+        <h2>About Me</h2>
 
-    <p>
-      I am a Mechanical and Aerospace Engineering student at the University of Florida
-      driven by a simple goal: to become the kind of engineer who can take an idea from
-      concept to analysis, manufacturing, testing, and real-world use.
-    </p>
+        <p>
+          I am a Mechanical and Aerospace Engineering student at the University of Florida
+          driven by a simple goal: to become the kind of engineer who can take an idea from
+          concept to analysis, manufacturing, testing, and real-world use.
+        </p>
 
-    <p>
-      My experience spans hands-on manufacturing, CAD and simulation work, digital
-      engineering, and technical communication. I have developed practical engineering
-      skills through ACE CNC training, my valveless pulsejet engine project, my role as a
-      Design and Manufacturing Lab Teaching Assistant, my involvement with Gator Motorsports,
-      and my internship experience with NextGen Federal Systems.
-    </p>
+        <p>
+          My experience spans hands-on manufacturing, CAD and simulation work, digital
+          engineering, and technical communication. I have developed practical engineering
+          skills through ACE CNC training, my valveless pulsejet engine project, my role as a
+          Design and Manufacturing Lab Teaching Assistant, my involvement with Gator Motorsports,
+          and my internship experience with NextGen Federal Systems.
+        </p>
 
-    <p>
-      Through NextGen Federal Systems and my upcoming work with Northrop Grumman Mission
-      Systems, my interests in aerospace, defense, digital engineering, and mission-focused
-      technology continue to grow. I am always looking for opportunities to learn from
-      experienced engineers, take on difficult problems, and contribute to work that has
-      real impact.
-    </p>
+        <p>
+          Through NextGen Federal Systems and my upcoming work with Northrop Grumman Mission
+          Systems, my interests in aerospace, defense, digital engineering, and mission-focused
+          technology continue to grow. I am always looking for opportunities to learn from
+          experienced engineers, take on difficult problems, and contribute to work that has
+          real impact.
+        </p>
 
-    <p>
-      My background as an Eagle Scout continues to influence the way I approach engineering:
-      with leadership, persistence, service, and a focus on seeing difficult projects
-      through from planning to completion.
-    </p>
-  </div>
+        <p>
+          My background as an Eagle Scout continues to influence the way I approach engineering:
+          with leadership, persistence, service, and a focus on seeing difficult projects
+          through from planning to completion.
+        </p>
+      </div>
 
-  <div class="about-image">
-    <img class="profile-photo" src="headshot.jpeg" alt="Photo of Anuj Kashyap">
-  </div>
-</section>
+      <div class="about-image">
+        <img class="profile-photo" src="headshot.jpeg" alt="Photo of Anuj Kashyap">
+      </div>
+    </section>
 
     <section id="projects">
-  <h2>Projects, Internships, and Lab Work</h2>
+      <h2>Projects, Internships, and Lab Work</h2>
 
-  <div class="project-grid">
+      <div class="project-grid">
 
-    <a class="project-card project-link" href="pulsejet.html">
-      <span class="tag project-tag">Project</span>
-      <h3>Valveless Pulsejet Engine</h3>
-      <p>
-        Designed and analyzed a Lockwood-style valveless pulsejet concept using CAD,
-        SolidWorks Flow Simulation, and MATLAB.
-      </p>
-      <p><strong>Tools:</strong> SolidWorks, CFD, MATLAB</p>
-    </a>
+        <a class="project-card project-link" href="pulsejet.html" data-project="pulsejet">
+          <span class="tag project-tag">Project</span>
+          <h3>Valveless Pulsejet Engine</h3>
+          <p>
+            Designed and analyzed a Lockwood-style valveless pulsejet concept using CAD,
+            SolidWorks Flow Simulation, and MATLAB.
+          </p>
+          <p><strong>Tools:</strong> SolidWorks, CFD, MATLAB</p>
+          <span class="card-status">View Details</span>
+        </a>
 
-    <a class="project-card project-link" href="mom-lab.html">
-      <span class="tag lab-tag">Lab Work</span>
-      <h3>Mechanics of Materials Lab</h3>
-      <p>
-        Completed experimental lab work focused on material behavior, stress, strain,
-        failure modes, and engineering data analysis.
-      </p>
-      <p><strong>Tools:</strong> lab testing, data analysis, technical writing</p>
-    </a>
+        <a class="project-card project-link" href="mom-lab.html" data-project="momLab">
+          <span class="tag lab-tag">Lab Work</span>
+          <h3>Mechanics of Materials Lab</h3>
+          <p>
+            Completed experimental lab work focused on stress, strain, material behavior,
+            data analysis, uncertainty, and technical reporting.
+          </p>
+          <p><strong>Tools:</strong> material testing, MATLAB, technical writing</p>
+          <span class="card-status">View Details</span>
+        </a>
 
-    <a class="project-card project-link" href="nextgen.html">
-      <span class="tag internship-tag">Internship</span>
-      <h3>NextGen Federal Systems</h3>
-      <p>
-        Supported digital engineering work involving digital twins, MBSE diagrams,
-        STK scenarios, and technical documentation.
-      </p>
-      <p><strong>Tools:</strong> STK, MBSE, digital twins, documentation</p>
-    </a>
+        <a class="project-card project-link" href="nextgen.html" data-project="nextgen">
+          <span class="tag internship-tag">Internship</span>
+          <h3>NextGen Federal Systems</h3>
+          <p>
+            Supported digital engineering work involving digital twins, MBSE diagrams,
+            STK scenarios, and technical documentation.
+          </p>
+          <p><strong>Tools:</strong> STK, MBSE, digital twins, documentation</p>
+          <span class="card-status">View Details</span>
+        </a>
 
-    <a class="project-card project-link" href="northrop.html">
-      <span class="tag internship-tag">Internship</span>
-      <h3>Northrop Grumman Mission Systems</h3>
-      <p>
-        Engineering internship experience in a professional aerospace and defense
-        mission systems environment.
-      </p>
-      <p><strong>Tools:</strong> engineering systems, documentation, technical problem solving</p>
-    </a>
+        <a class="project-card project-link" href="northrop.html" data-project="northrop">
+          <span class="tag internship-tag">Internship</span>
+          <h3>Northrop Grumman Mission Systems</h3>
+          <p>
+            Engineering internship experience in a professional aerospace and defense
+            mission systems environment.
+          </p>
+          <p><strong>Tools:</strong> engineering systems, documentation, technical problem solving</p>
+          <span class="card-status">View Details</span>
+        </a>
 
-    <a class="project-card project-link" href="ace-air-engine.html">
-      <span class="tag project-tag">Project</span>
-      <h3>ACE Air Engine</h3>
-      <p>
-        Hands-on mechanical design and manufacturing project involving an air-powered
-        engine assembly and component-level engineering work.
-      </p>
-      <p><strong>Tools:</strong> machining, assembly, mechanical design</p>
-    </a>
+        <a class="project-card project-link" href="ace-air-engine.html" data-project="aceAirEngine">
+          <span class="tag project-tag">Project</span>
+          <h3>ACE Air Engine</h3>
+          <p>
+            Hands-on mechanical design and manufacturing project involving an air-powered
+            engine assembly and machined components.
+          </p>
+          <p><strong>Tools:</strong> CNC, machining, assembly, mechanical design</p>
+          <span class="card-status">View Details</span>
+        </a>
 
-    <a class="project-card project-link" href="dml-ta.html">
-      <span class="tag lab-tag">Lab Work</span>
-      <h3>DML Teaching Assistant</h3>
-      <p>
-        Supported students in a design and manufacturing lab environment through
-        hands-on technical guidance, equipment support, and engineering instruction.
-      </p>
-      <p><strong>Tools:</strong> manufacturing, teaching, lab support</p>
-    </a>
+        <a class="project-card project-link" href="dml-ta.html" data-project="dmlTa">
+          <span class="tag lab-tag">Lab Work</span>
+          <h3>Design and Manufacturing Lab Teaching Assistant</h3>
+          <p>
+            Supported students in a design and manufacturing lab environment through
+            hands-on equipment guidance, troubleshooting, and technical instruction.
+          </p>
+          <p><strong>Tools:</strong> manufacturing, teaching, lab support</p>
+          <span class="card-status">View Details</span>
+        </a>
 
-  </div>
-</section>
+      </div>
+    </section>
 
     <section id="resume">
       <h2>Resume</h2>
       <p>
-        My resume will be available here as a PDF.
+        View or download my current resume as a PDF.
       </p>
-      <a class="button" href="resume.pdf" target="_blank">View Resume</a>
+      <a class="button" href="resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
     </section>
 
-   <section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:aakashyap05@gmail.com">aakashyap05@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/aakashyap05/" target="_blank" rel="noopener noreferrer">linkedin.com/in/aakashyap05</a></p>
-</section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:aakashyap05@gmail.com">aakashyap05@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/aakashyap05/" target="_blank" rel="noopener noreferrer">linkedin.com/in/aakashyap05</a></p>
+      <p>GitHub: <a href="https://github.com/aakashyap05" target="_blank" rel="noopener noreferrer">github.com/aakashyap05</a></p>
+    </section>
   </main>
 
   <footer>
     <p>© 2026 Anuj Kashyap</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".project-link[data-project]");
+
+      cards.forEach(function (card) {
+        const projectKey = card.dataset.project;
+        const isEnabled = PROJECT_LINKS_ENABLED[projectKey] === true;
+        const status = card.querySelector(".card-status");
+
+        if (!isEnabled) {
+          card.classList.add("disabled-card");
+          card.removeAttribute("href");
+          card.setAttribute("aria-disabled", "true");
+
+          if (status) {
+            status.textContent = "Page in progress";
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
