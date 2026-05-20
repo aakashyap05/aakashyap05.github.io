@@ -166,18 +166,28 @@
       </div>
     </section>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>
-        View or download my current resume as a PDF.
-      </p>
-      <a class="button" href="resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
-    </section>
+    <section class="bottom-info">
+      <div id="resume" class="info-card">
+        <h2>Resume</h2>
+        <p>
+          View or download my current resume as a PDF.
+        </p>
+        <a class="button" href="resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+      </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:aakashyap05@gmail.com">aakashyap05@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/aakashyap05/" target="_blank" rel="noopener noreferrer">linkedin.com/in/aakashyap05</a></p>
+      <div id="contact" class="info-card">
+        <h2>Contact</h2>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:aakashyap05@gmail.com">aakashyap05@gmail.com</a>
+        </p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/aakashyap05/" target="_blank" rel="noopener noreferrer">linkedin.com/in/aakashyap05</a>
+        </p>
+        <p>
+        </p>
+      </div>
     </section>
   </main>
 
@@ -200,7 +210,7 @@
           card.setAttribute("aria-disabled", "true");
 
           if (status) {
-            status.textContent = "Page in progress";
+            status.textContent = "Details coming soon";
           }
         }
       });
