@@ -16,7 +16,11 @@ body {
 }
 
 header {
-  background: #111827;
+  background:
+    linear-gradient(rgba(17, 24, 39, 0.88), rgba(17, 24, 39, 0.88)),
+    url("hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
   color: white;
   padding: 24px 8%;
 }
