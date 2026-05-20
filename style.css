@@ -544,3 +544,28 @@ footer {
     font-size: 34px;
   }
 }
+/* =========================
+   PROJECT CARD ENABLE / DISABLE STATUS
+========================= */
+
+.card-status {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.disabled-card {
+  opacity: 0.68;
+  cursor: not-allowed;
+}
+
+.disabled-card:hover {
+  transform: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.disabled-card .card-status {
+  color: #6b7280;
+}
