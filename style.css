@@ -221,7 +221,7 @@ section p {
 }
 
 .disabled-card {
-  opacity: 0.68;
+  opacity: 0.88;
   cursor: not-allowed;
 }
 
@@ -268,6 +268,43 @@ section p {
 .composites-tag {
   background: #ede9fe;
   color: #5b21b6;
+}
+
+/* =========================
+   RESUME / CONTACT SECTION
+========================= */
+
+.bottom-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 75px;
+}
+
+.info-card {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h2 {
+  margin-bottom: 16px;
+}
+
+.info-card p {
+  margin-bottom: 14px;
+}
+
+.info-card a:not(.button) {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.info-card a:not(.button):hover {
+  text-decoration: underline;
 }
 
 /* =========================
@@ -571,6 +608,10 @@ footer {
   }
 
   .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-info {
     grid-template-columns: 1fr;
   }
 
