@@ -15,9 +15,13 @@ body {
   background-color: #f8f9fa;
 }
 
+/* =========================
+   HOME PAGE HEADER / HERO
+========================= */
+
 header {
   background:
-    linear-gradient(rgba(17, 24, 39, 0.88), rgba(17, 24, 39, 0.88)),
+    linear-gradient(rgba(17, 24, 39, 0.86), rgba(17, 24, 39, 0.86)),
     url("hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -95,6 +99,10 @@ nav h2 {
   color: #111827;
 }
 
+/* =========================
+   MAIN PAGE LAYOUT
+========================= */
+
 main {
   padding: 55px 8%;
 }
@@ -113,6 +121,54 @@ section p {
   max-width: 900px;
   font-size: 17px;
 }
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1.35fr 0.75fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-text p {
+  margin-bottom: 16px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 230px !important;
+  max-width: 230px !important;
+  height: 290px !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  display: block;
+}
+
+/* fallback if image does not have profile-photo class */
+.about-image img {
+  width: 230px;
+  max-width: 230px;
+  height: 290px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  display: block;
+}
+
+/* =========================
+   PROJECT CARDS
+========================= */
 
 .project-grid {
   display: grid;
@@ -139,41 +195,6 @@ section p {
   font-size: 16px;
 }
 
-footer {
-  text-align: center;
-  padding: 24px;
-  background: #111827;
-  color: white;
-}
-
-@media (max-width: 750px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 60px;
-  }
-
-  .nav-links {
-    margin-top: 16px;
-  }
-
-  .nav-links a {
-    display: inline-block;
-    margin: 8px 14px 0 0;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
 .project-link {
   display: block;
   color: inherit;
@@ -185,6 +206,10 @@ footer {
   transform: translateY(-4px);
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
 }
+
+/* =========================
+   TAGS
+========================= */
 
 .tag {
   display: inline-block;
@@ -210,6 +235,10 @@ footer {
   color: #92400e;
 }
 
+/* =========================
+   DETAIL PAGES
+========================= */
+
 .page-header {
   background: #111827;
   color: white;
@@ -220,6 +249,10 @@ footer {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+.page-header a:hover {
+  text-decoration: underline;
 }
 
 .detail-page {
@@ -238,6 +271,7 @@ footer {
   margin-top: 36px;
   margin-bottom: 14px;
   font-size: 28px;
+  color: #111827;
 }
 
 .detail-page p {
@@ -252,7 +286,21 @@ footer {
 
 .detail-page li {
   margin-bottom: 8px;
+  font-size: 17px;
 }
+
+.detail-section {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  margin-top: 24px;
+}
+
+/* =========================
+   CERTIFICATIONS PAGE
+========================= */
 
 .cert-grid {
   display: grid;
@@ -271,43 +319,77 @@ footer {
 
 .cert-card h3 {
   margin-bottom: 10px;
+  color: #111827;
 }
 
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background: #111827;
+  color: white;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 750px) {
-  .cert-grid {
-    grid-template-columns: 1fr;
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 60px;
   }
-.about-section {
-  display: grid;
-  grid-template-columns: 1.35fr 0.75fr;
-  gap: 48px;
-  align-items: center;
-}
 
-.about-text p {
-  margin-bottom: 16px;
-}
+  .nav-links {
+    margin-top: 16px;
+  }
 
-.about-image img {
-  width: 100%;
-  max-width: 260px;
-  height: 320px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-  display: block;
-  margin-left: auto;
-}
+  .nav-links a {
+    display: inline-block;
+    margin: 8px 14px 0 0;
+  }
 
-@media (max-width: 750px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
   .about-section {
     grid-template-columns: 1fr;
   }
 
+  .about-image {
+    justify-content: flex-start;
+  }
+
+  .profile-photo {
+    width: 200px !important;
+    max-width: 200px !important;
+    height: 250px !important;
+  }
+
   .about-image img {
-    margin-left: 0;
-    max-width: 220px;
-    height: 280px;
+    width: 200px;
+    max-width: 200px;
+    height: 250px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-page h1 {
+    font-size: 34px;
   }
 }
