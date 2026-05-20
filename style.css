@@ -277,7 +277,36 @@ footer {
   .cert-grid {
     grid-template-columns: 1fr;
   }
+.about-section {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
 
+.about-text p {
+  margin-bottom: 16px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 330px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  display: block;
+  margin-left: auto;
+}
+
+@media (max-width: 750px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    margin-left: 0;
+    max-width: 280px;
+  }
+}
   .detail-page h1 {
     font-size: 34px;
   }
