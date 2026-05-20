@@ -21,7 +21,7 @@ body {
 
 header {
   background:
-    linear-gradient(rgba(17, 24, 39, 0.86), rgba(17, 24, 39, 0.86)),
+    linear-gradient(rgba(17, 24, 39, 0.76), rgba(17, 24, 39, 0.76)),
     url("hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -108,7 +108,7 @@ main {
 }
 
 section {
-  margin-bottom: 75px;
+  margin-bottom: 95px;
 }
 
 section h2 {
