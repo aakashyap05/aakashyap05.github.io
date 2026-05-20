@@ -355,6 +355,10 @@ section p {
   margin-bottom: 6px;
 }
 
+.cert-card-text-only {
+  grid-template-columns: 1fr !important;
+}
+
 .cert-meta {
   color: #6b7280;
   font-size: 15px !important;
@@ -429,6 +433,23 @@ section p {
   min-height: 190px;
 }
 
+/* Optional button style if you ever link a PDF certificate */
+.cert-button {
+  display: inline-block;
+  margin-top: 8px;
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.cert-button:hover {
+  background: #1d4ed8;
+}
+
 /* =========================
    FOOTER
 ========================= */
@@ -501,25 +522,7 @@ footer {
   .project-grid {
     grid-template-columns: 1fr;
   }
-.cert-card-text-only {
-  grid-template-columns: 1fr !important;
-}
 
-.cert-button {
-  display: inline-block;
-  margin-top: 8px;
-  background: #2563eb;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.cert-button:hover {
-  background: #1d4ed8;
-}
   .detail-page h1 {
     font-size: 34px;
   }
