@@ -9,50 +9,320 @@
 
 <body>
   <header class="page-header">
-  <a href="index.html">← Back to Portfolio</a>
-  <a href="#">↑ Top</a>
-</header>
+    <a href="index.html">← Back to Portfolio</a>
+    <a href="#">↑ Top</a>
+  </header>
 
-  <main class="detail-page">
-    <span class="tag lab-tag">Lab Work</span>
-    <h1>Mechanics of Materials Lab</h1>
+  <main class="detail-page mom-page">
+    <section class="project-hero-detail">
+      <span class="tag lab-tag">Lab Work</span>
+      <h1>Mechanics of Materials Laboratory</h1>
 
-    <p>
-      This lab work focused on experimental mechanics, material behavior, stress and strain
-      analysis, failure behavior, data processing, uncertainty, and engineering reporting.
-      The work connected classroom mechanics concepts to physical testing and measured data.
-    </p>
+      <p class="project-lead">
+        Experimental mechanics work focused on strain measurement, material failure,
+        uncertainty analysis, data acquisition, pressure-vessel behavior, adhesive joint
+        strength, and translating measured physical behavior into defensible engineering conclusions.
+      </p>
+
+      <div class="tech-pill-grid">
+        <span>Strain Gauges</span>
+        <span>Wheatstone Bridges</span>
+        <span>LabVIEW</span>
+        <span>DAQ Systems</span>
+        <span>Instron Testing</span>
+        <span>Uncertainty Analysis</span>
+        <span>Stress-Strain Curves</span>
+        <span>ImageJ</span>
+        <span>MATLAB / Data Analysis</span>
+        <span>Technical Reporting</span>
+      </div>
+    </section>
+
+    <section class="impact-grid">
+      <div class="impact-card">
+        <h3>Instrumentation</h3>
+        <p>
+          Built experience with strain gauges, Wheatstone bridge circuits, amplified voltage
+          signals, data acquisition, and measurement sensitivity.
+        </p>
+      </div>
+
+      <div class="impact-card">
+        <h3>Failure Analysis</h3>
+        <p>
+          Studied material fracture, ductile and brittle behavior, adhesive failure modes,
+          stress-strain response, and structural performance limits.
+        </p>
+      </div>
+
+      <div class="impact-card">
+        <h3>Engineering Judgment</h3>
+        <p>
+          Used uncertainty, calibration, assumptions, and comparison methods to decide which
+          measurements were trustworthy and why.
+        </p>
+      </div>
+    </section>
 
     <div class="detail-section">
-      <h2>Focus Areas</h2>
-      <ul>
-        <li>Stress, strain, and material response under loading.</li>
-        <li>Experimental testing and data collection.</li>
-        <li>Uncertainty analysis and comparison of measured results.</li>
-        <li>Technical communication through structured engineering lab reports.</li>
-      </ul>
-    </div>
-
-    <div class="detail-section">
-      <h2>Tools Used</h2>
-      <p>Material testing equipment, MATLAB, Excel, data analysis, technical writing.</p>
-    </div>
-
-    <div class="detail-section">
-      <h2>Engineering Skills Developed</h2>
-      <ul>
-        <li>Interpreting experimental data and comparing it to theoretical expectations.</li>
-        <li>Documenting procedures, results, uncertainty, and limitations clearly.</li>
-        <li>Explaining material behavior through measured evidence.</li>
-        <li>Connecting mechanics of materials theory to real test results.</li>
-      </ul>
-    </div>
-
-    <div class="detail-section">
-      <h2>What I Learned</h2>
+      <h2>Overview</h2>
       <p>
-        This lab strengthened my ability to work with real engineering data, communicate
-        uncertainty, and explain how material behavior changes under different loading conditions.
+        This lab sequence strengthened my ability to move from raw physical measurements
+        to engineering conclusions. Across the reports, I worked with strain gauges,
+        DAQ systems, LabVIEW virtual instruments, Instron mechanical testing, uncertainty
+        propagation, material property extraction, ImageJ measurements, and pressure-vessel
+        theory.
+      </p>
+
+      <p>
+        The work was valuable because it connected theory to real test data. Instead of
+        simply applying equations, each report required decisions about sensor setup,
+        calibration, measurement uncertainty, failure mode interpretation, assumptions,
+        and how confidently the data supported a conclusion.
+      </p>
+    </div>
+
+    <div class="detail-section highlight-section">
+      <h2>Why This Lab Matters</h2>
+      <p>
+        Aerospace and mechanical systems depend on more than perfect textbook assumptions.
+        Real hardware has noise, tolerances, imperfect boundary conditions, uncertain material
+        properties, setup limitations, and failure modes that need to be interpreted carefully.
+      </p>
+
+      <p>
+        These reports helped me build the mindset required for real engineering work:
+        measure carefully, understand the limitations of the setup, quantify uncertainty,
+        compare independent methods, and explain what the data can and cannot prove.
+      </p>
+    </div>
+
+    <div class="detail-section">
+      <h2>Lab Reports</h2>
+
+      <div class="report-grid">
+
+        <article class="report-card featured-report">
+          <div class="report-topline">
+            <span class="report-number">Final Project</span>
+            <span class="report-type">Pressure Vessels / Strain Measurement</span>
+          </div>
+
+          <h3>Internal Pressure of a Carbonated Beverage Can</h3>
+
+          <p>
+            Estimated the internal pressure of an unopened carbonated beverage can using
+            two independent approaches: strain-gauge measurements aligned with hoop and
+            longitudinal directions, and a diameter-change method after opening. The work
+            applied thin-walled pressure-vessel theory, plane-stress relationships, DAQ
+            measurement, and uncertainty propagation.
+          </p>
+
+          <div class="report-metrics">
+            <div>
+              <strong>Core idea</strong>
+              <span>Convert measured strain into internal pressure</span>
+            </div>
+            <div>
+              <strong>Engineering focus</strong>
+              <span>Pressure-vessel theory and uncertainty comparison</span>
+            </div>
+          </div>
+
+          <p class="skills-line">
+            <span>Skills:</span> strain gauges, DAQ, pressure-vessel theory, uncertainty propagation, technical writing
+          </p>
+
+          <a class="report-button" href="KashyapA-FP31.pdf" target="_blank" rel="noopener noreferrer">
+            View Report PDF
+          </a>
+        </article>
+
+        <article class="report-card">
+          <div class="report-topline">
+            <span class="report-number">Lab 1</span>
+            <span class="report-type">DAQ / Strain Gauges</span>
+          </div>
+
+          <h3>Uncertainty Analysis of Strain Gauge Measurements Using Digital Data Acquisition</h3>
+
+          <p>
+            Used strain-based measurements to estimate the outside radius of a stool footrest
+            and compared the result against a direct geometric circumference measurement.
+            The experiment emphasized DAQ resolution, sampling window selection, signal
+            amplification, Wheatstone bridge behavior, and 95% uncertainty comparison.
+          </p>
+
+          <div class="report-metrics">
+            <div>
+              <strong>Core idea</strong>
+              <span>Resolve small strain signals from voltage measurements</span>
+            </div>
+            <div>
+              <strong>Engineering focus</strong>
+              <span>Measurement quality and uncertainty propagation</span>
+            </div>
+          </div>
+
+          <p class="skills-line">
+            <span>Skills:</span> LabVIEW, DAQ, strain gauges, Wheatstone bridge circuits, RSS uncertainty
+          </p>
+
+          <a class="report-button" href="KashyapA-L1.pdf" target="_blank" rel="noopener noreferrer">
+            View Report PDF
+          </a>
+        </article>
+
+        <article class="report-card">
+          <div class="report-topline">
+            <span class="report-number">Lab 2</span>
+            <span class="report-type">Beam Bending / Calibration</span>
+          </div>
+
+          <h3>Strain-Instrumented Cantilever Beam Scale</h3>
+
+          <p>
+            Built and evaluated a strain-instrumented cantilever beam as a low-cost scale
+            for estimating bottle weight and average gulp size. The report compared a
+            calibration-based voltage-to-weight method against a Mechanics of Materials
+            beam-bending model, using Monte Carlo and RSS methods to evaluate uncertainty.
+          </p>
+
+          <div class="report-metrics">
+            <div>
+              <strong>Core idea</strong>
+              <span>Use strain response to estimate applied load</span>
+            </div>
+            <div>
+              <strong>Engineering focus</strong>
+              <span>Calibration vs. analytical model comparison</span>
+            </div>
+          </div>
+
+          <p class="skills-line">
+            <span>Skills:</span> beam bending, calibration, strain gauges, Monte Carlo uncertainty, LabVIEW
+          </p>
+
+          <a class="report-button" href="KashyapA-L2.pdf" target="_blank" rel="noopener noreferrer">
+            View Report PDF
+          </a>
+        </article>
+
+        <article class="report-card featured-report">
+          <div class="report-topline">
+            <span class="report-number">Lab 3</span>
+            <span class="report-type">Material Characterization</span>
+          </div>
+
+          <h3>Failure Testing of Material Specimens</h3>
+
+          <p>
+            Used displacement-controlled tensile and compressive testing to develop
+            stress-strain relationships for an unknown metal, carbon fiber, nylon, and
+            plaster of Paris. The report extracted material properties, compared ductile
+            and brittle behavior, evaluated specific strength and stiffness, and identified
+            the unknown metal as most consistent with 7075-T6 aluminum.
+          </p>
+
+          <div class="report-metrics">
+            <div>
+              <strong>Core idea</strong>
+              <span>Turn load-displacement data into material behavior</span>
+            </div>
+            <div>
+              <strong>Engineering focus</strong>
+              <span>Failure, material ID, and stress-strain interpretation</span>
+            </div>
+          </div>
+
+          <p class="skills-line">
+            <span>Skills:</span> Instron testing, stress-strain analysis, material identification, Ramberg-Osgood modeling
+          </p>
+
+          <a class="report-button" href="KashyapA-L3.pdf" target="_blank" rel="noopener noreferrer">
+            View Report PDF
+          </a>
+        </article>
+
+        <article class="report-card">
+          <div class="report-topline">
+            <span class="report-number">Lab 4</span>
+            <span class="report-type">Adhesive Joint Failure</span>
+          </div>
+
+          <h3>Failure Analysis of Adhesives</h3>
+
+          <p>
+            Evaluated the shear strength of four adhesives in 6061-T6 aluminum double-lap
+            joints using measured failure load and post-failure adhesive area. The report
+            used calibrated ImageJ measurements, failure-mode observations, load-path
+            assumptions, and uncertainty comparison to evaluate adhesive performance.
+          </p>
+
+          <div class="report-metrics">
+            <div>
+              <strong>Core idea</strong>
+              <span>Calculate adhesive shear strength from failure load and area</span>
+            </div>
+            <div>
+              <strong>Engineering focus</strong>
+              <span>Joint strength, failure mode, and bonded-area uncertainty</span>
+            </div>
+          </div>
+
+          <p class="skills-line">
+            <span>Skills:</span> adhesive joints, ImageJ, shear stress, failure analysis, uncertainty comparison
+          </p>
+
+          <a class="report-button" href="KashyapA-L4.pdf" target="_blank" rel="noopener noreferrer">
+            View Report PDF
+          </a>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h2>Technical Skills Demonstrated</h2>
+
+      <div class="tool-grid">
+        <div>
+          <h3>Experimental Mechanics</h3>
+          <p>Stress, strain, beam bending, pressure-vessel theory, material failure, adhesive shear.</p>
+        </div>
+
+        <div>
+          <h3>Instrumentation</h3>
+          <p>Strain gauges, Wheatstone bridge circuits, amplified voltage signals, DAQ hardware.</p>
+        </div>
+
+        <div>
+          <h3>Data and Uncertainty</h3>
+          <p>RSS propagation, 95% confidence intervals, calibration, Monte Carlo simulation.</p>
+        </div>
+
+        <div>
+          <h3>Technical Communication</h3>
+          <p>IEEE-style reports, figures, equations, tables, discussion of assumptions and limitations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h2>What I Took Away</h2>
+      <p>
+        The biggest takeaway from this lab sequence was learning how much engineering
+        judgment sits between raw data and a final conclusion. The calculations matter,
+        but so do sensor placement, calibration quality, noise, uncertainty, boundary
+        conditions, failure observations, and whether the model assumptions are actually
+        reasonable for the test.
+      </p>
+
+      <p>
+        This is the kind of work that connects directly to real mechanical and aerospace
+        engineering: testing hardware, understanding how it fails, quantifying confidence
+        in the result, and communicating the conclusion clearly enough that another engineer
+        can trust it.
       </p>
     </div>
   </main>
