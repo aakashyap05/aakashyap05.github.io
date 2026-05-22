@@ -312,9 +312,16 @@ section p {
 ========================= */
 
 .page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background: #111827;
   color: white;
-  padding: 28px 8%;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
 }
 
 .page-header a {
@@ -523,103 +530,6 @@ section p {
 }
 
 /* =========================
-   FOOTER
-========================= */
-
-footer {
-  text-align: center;
-  padding: 24px;
-  background: #111827;
-  color: white;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 800px) {
-  .certifications-page .cert-card {
-    grid-template-columns: 1fr;
-  }
-
-  .cert-media {
-    justify-self: start;
-    max-width: 360px;
-  }
-
-  .cert-subgrid {
-    grid-template-columns: 1fr;
-  }
-
-  .cert-subgrid .cert-media {
-    max-width: 360px;
-    justify-self: start;
-  }
-}
-
-@media (max-width: 750px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 60px;
-  }
-
-  .nav-links {
-    margin-top: 16px;
-  }
-
-  .nav-links a {
-    display: inline-block;
-    margin: 8px 14px 0 0;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  .about-section {
-    grid-template-columns: 1fr;
-    max-width: none;
-    margin-bottom: 95px;
-  }
-
-  .about-text {
-    max-width: none;
-  }
-
-  .about-image {
-    justify-content: flex-start;
-  }
-
-  .profile-photo {
-    width: 200px !important;
-    max-width: 200px !important;
-    height: 250px !important;
-  }
-
-  .about-image img {
-    width: 200px;
-    max-width: 200px;
-    height: 250px;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .bottom-info {
-    grid-template-columns: 1fr;
-  }
-
-  .detail-page h1 {
-    font-size: 34px;
-  }
-}
-/* =========================
    NEXTGEN / FEATURED DETAIL PAGE STYLING
 ========================= */
 
@@ -727,7 +637,40 @@ footer {
   font-size: 16px;
 }
 
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background: #111827;
+  color: white;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 800px) {
+  .certifications-page .cert-card {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-media {
+    justify-self: start;
+    max-width: 360px;
+  }
+
+  .cert-subgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-subgrid .cert-media {
+    max-width: 360px;
+    justify-self: start;
+  }
+
   .project-hero-detail {
     padding: 28px;
   }
@@ -742,5 +685,72 @@ footer {
 
   .tool-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+
+  .nav-links {
+    margin-top: 16px;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    margin: 8px 14px 0 0;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+    max-width: none;
+    margin-bottom: 95px;
+  }
+
+  .about-text {
+    max-width: none;
+  }
+
+  .about-image {
+    justify-content: flex-start;
+  }
+
+  .profile-photo {
+    width: 200px !important;
+    max-width: 200px !important;
+    height: 250px !important;
+  }
+
+  .about-image img {
+    width: 200px;
+    max-width: 200px;
+    height: 250px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-info {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    padding: 16px 8%;
+  }
+
+  .detail-page h1 {
+    font-size: 34px;
   }
 }
