@@ -95,7 +95,7 @@
 
       <div class="project-grid">
 
-        <a class="project-card project-link" href="pulsejet.html" data-project="pulsejet">
+        <a class="project-card project-link" data-url="pulsejet.html" data-project="pulsejet">
           <span class="tag project-tag">Project</span>
           <h3>Valveless Pulsejet Engine</h3>
           <p>
@@ -106,30 +106,31 @@
           <span class="card-status">View Details</span>
         </a>
 
-        <a class="project-card project-link" href="mom-lab.html" data-project="momLab">
+        <a class="project-card project-link" data-url="mom-lab.html" data-project="momLab">
           <span class="tag lab-tag">Lab Work</span>
           <h3>Mechanics of Materials Lab</h3>
           <p>
-            Completed experimental lab work focused on stress, strain, material behavior,
-            data analysis, uncertainty, and technical reporting.
+            Completed experimental mechanics work involving strain gauges, DAQ systems,
+            material failure testing, adhesive shear analysis, pressure-vessel theory,
+            and uncertainty-supported engineering conclusions.
           </p>
-          <p><strong>Tools:</strong> material testing, MATLAB, technical writing</p>
+          <p><strong>Tools:</strong> LabVIEW, DAQ, strain gauges, Instron testing, ImageJ, uncertainty analysis</p>
           <span class="card-status">View Details</span>
         </a>
 
-        <a class="project-card project-link" href="nextgen.html" data-project="nextgen">
-  <span class="tag internship-tag">Internship</span>
-  <h3>NextGen Federal Systems</h3>
-  <p>
-    Supported aerospace simulation and digital engineering workflows involving Ansys
-    modeling, Fluent analysis, STK scenarios, Python automation, C++ development,
-    Docker containers, and WSL.
-  </p>
-  <p><strong>Tools:</strong> Ansys Fluent, STK, Python, C++, Docker, WSL</p>
-  <span class="card-status">View Details</span>
-</a>
+        <a class="project-card project-link" data-url="nextgen.html" data-project="nextgen">
+          <span class="tag internship-tag">Internship</span>
+          <h3>NextGen Federal Systems</h3>
+          <p>
+            Supported aerospace simulation and digital engineering workflows involving Ansys
+            modeling, Fluent analysis, STK scenarios, Python automation, C++ development,
+            Docker containers, and WSL.
+          </p>
+          <p><strong>Tools:</strong> Ansys Fluent, STK, Python, C++, Docker, WSL</p>
+          <span class="card-status">View Details</span>
+        </a>
 
-        <a class="project-card project-link" href="northrop.html" data-project="northrop">
+        <a class="project-card project-link" data-url="northrop.html" data-project="northrop">
           <span class="tag internship-tag">Internship</span>
           <h3>Northrop Grumman Mission Systems</h3>
           <p>
@@ -140,7 +141,7 @@
           <span class="card-status">View Details</span>
         </a>
 
-        <a class="project-card project-link" href="ace-air-engine.html" data-project="aceAirEngine">
+        <a class="project-card project-link" data-url="ace-air-engine.html" data-project="aceAirEngine">
           <span class="tag project-tag">Project</span>
           <h3>ACE Air Engine</h3>
           <p>
@@ -151,17 +152,17 @@
           <span class="card-status">View Details</span>
         </a>
 
-        <a class="project-card project-link" href="dml-ta.html" data-project="dmlTa">
-  <span class="tag lab-tag">Lab Work</span>
-  <h3>Design and Manufacturing Lab Teaching Assistant</h3>
-  <p>
-    Teach and support students in a hands-on manufacturing lab environment involving manual
-    milling, lathe work, CNC demonstrations, sheet metal equipment, GMAW welding, safety,
-    troubleshooting, and design-to-fabrication guidance.
-  </p>
-  <p><strong>Tools:</strong> manual mill, lathe, CNC mill, press brake, shear, GMAW welding</p>
-  <span class="card-status">View Details</span>
-</a>
+        <a class="project-card project-link" data-url="dml-ta.html" data-project="dmlTa">
+          <span class="tag lab-tag">Lab Work</span>
+          <h3>Design and Manufacturing Lab Teaching Assistant</h3>
+          <p>
+            Teach and support students in a hands-on manufacturing lab environment involving manual
+            milling, lathe work, CNC demonstrations, sheet metal equipment, GMAW welding, safety,
+            troubleshooting, and design-to-fabrication guidance.
+          </p>
+          <p><strong>Tools:</strong> manual mill, lathe, CNC mill, press brake, shear, GMAW welding</p>
+          <span class="card-status">View Details</span>
+        </a>
 
       </div>
     </section>
@@ -202,7 +203,13 @@
         const isEnabled = PROJECT_LINKS_ENABLED[projectKey] === true;
         const status = card.querySelector(".card-status");
 
-        if (!isEnabled) {
+        if (isEnabled) {
+          card.setAttribute("href", card.dataset.url);
+
+          if (status) {
+            status.textContent = "View Details";
+          }
+        } else {
           card.classList.add("disabled-card");
           card.removeAttribute("href");
           card.setAttribute("aria-disabled", "true");
