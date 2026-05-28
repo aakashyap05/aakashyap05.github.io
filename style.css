@@ -1204,13 +1204,6 @@ section p {
   background: #dfe5ee;
 }
 
-.dml-equipment-card img.full-machine-view {
-  object-fit: contain;
-  object-position: center;
-  padding: 10px;
-  background: #dfe5ee;
-}
-
 .dml-equipment-card div {
   padding: 24px;
 }
