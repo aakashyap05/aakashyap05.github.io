@@ -377,6 +377,34 @@ section p {
   margin-top: 24px;
 }
 
+/* Generic detail hero for simple pages */
+
+.project-hero-detail {
+  background: #111827;
+  color: white;
+  padding: 38px;
+  border-radius: 18px;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.project-hero-detail h1 {
+  color: white;
+  font-size: 46px;
+  margin-bottom: 14px;
+}
+
+.project-lead {
+  max-width: 850px;
+  font-size: 19px !important;
+  color: #d1d5db;
+  margin-bottom: 24px !important;
+}
+
+.note-section {
+  background: #f8fafc;
+}
+
 /* =========================
    CERTIFICATIONS PAGE
 ========================= */
@@ -442,8 +470,6 @@ section p {
   margin-right: 6px;
 }
 
-/* Certificate and badge images */
-
 .cert-media {
   width: 100%;
   max-width: 340px;
@@ -492,8 +518,6 @@ section p {
   padding-top: 12px;
 }
 
-/* Composite badge layout */
-
 .cert-subgrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -525,114 +549,6 @@ section p {
 
 .cert-button:hover {
   background: #1d4ed8;
-}
-
-/* =========================
-   NEXTGEN / FEATURED DETAIL PAGE STYLING
-========================= */
-
-.nextgen-page {
-  max-width: 1050px;
-}
-
-.project-hero-detail {
-  background: #111827;
-  color: white;
-  padding: 38px;
-  border-radius: 18px;
-  margin-bottom: 28px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.project-hero-detail h1 {
-  color: white;
-  font-size: 46px;
-  margin-bottom: 14px;
-}
-
-.project-lead {
-  max-width: 850px;
-  font-size: 19px !important;
-  color: #d1d5db;
-  margin-bottom: 24px !important;
-}
-
-.tech-pill-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tech-pill-grid span {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  padding: 8px 12px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.impact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-bottom: 28px;
-}
-
-.impact-card {
-  background: white;
-  padding: 22px;
-  border-radius: 16px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
-}
-
-.impact-card h3 {
-  color: #111827;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.impact-card p {
-  font-size: 15px;
-  margin-bottom: 0;
-}
-
-.highlight-section {
-  border-left: 5px solid #2563eb;
-}
-
-.note-section {
-  background: #f8fafc;
-}
-
-.strong-list li {
-  margin-bottom: 12px;
-}
-
-.tool-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.tool-grid div {
-  background: #f8fafc;
-  border: 1px solid #e5e7eb;
-  padding: 18px;
-  border-radius: 14px;
-}
-
-.tool-grid h3 {
-  color: #111827;
-  margin-bottom: 8px;
-  font-size: 18px;
-}
-
-.tool-grid p {
-  margin-bottom: 0;
-  font-size: 16px;
 }
 
 /* =========================
@@ -1379,192 +1295,12 @@ section p {
 }
 
 /* =========================
-   FOOTER
-========================= */
-
-footer {
-  text-align: center;
-  padding: 24px;
-  background: #111827;
-  color: white;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 1000px) {
-  .mom-process-grid,
-  .dml-process-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .mom-stat-grid,
-  .dml-stat-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .dml-photo-feature {
-    grid-template-columns: 1fr;
-  }
-
-  .dml-feature-image img {
-    height: 320px;
-  }
-}
-
-@media (max-width: 900px) {
-  .report-grid,
-  .dml-equipment-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .report-card.final-report {
-    grid-column: auto;
-  }
-
-  .mom-split-section,
-  .dml-split-section {
-    grid-template-columns: 1fr;
-  }
-
-  .final-metrics {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 800px) {
-  .certifications-page .cert-card {
-    grid-template-columns: 1fr;
-  }
-
-  .cert-media {
-    justify-self: start;
-    max-width: 360px;
-  }
-
-  .cert-subgrid {
-    grid-template-columns: 1fr;
-  }
-
-  .cert-subgrid .cert-media {
-    max-width: 360px;
-    justify-self: start;
-  }
-
-  .project-hero-detail,
-  .mom-hero,
-  .dml-hero {
-    padding: 30px;
-  }
-
-  .project-hero-detail h1,
-  .mom-hero h1,
-  .dml-hero h1 {
-    font-size: 36px;
-  }
-
-  .impact-grid,
-  .tool-grid,
-  .mom-skills-grid,
-  .dml-skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 750px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 60px;
-  }
-
-  .nav-links {
-    margin-top: 16px;
-  }
-
-  .nav-links a {
-    display: inline-block;
-    margin: 8px 14px 0 0;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  .about-section {
-    grid-template-columns: 1fr;
-    max-width: none;
-    margin-bottom: 95px;
-  }
-
-  .about-text {
-    max-width: none;
-  }
-
-  .about-image {
-    justify-content: flex-start;
-  }
-
-  .profile-photo {
-    width: 200px !important;
-    max-width: 200px !important;
-    height: 250px !important;
-  }
-
-  .about-image img {
-    width: 200px;
-    max-width: 200px;
-    height: 250px;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .bottom-info {
-    grid-template-columns: 1fr;
-  }
-
-  .page-header {
-    padding: 16px 8%;
-  }
-
-  .detail-page h1 {
-    font-size: 34px;
-  }
-
-  .report-card {
-    padding: 22px;
-  }
-}
-
-@media (max-width: 600px) {
-  .mom-stat-grid,
-  .mom-process-grid,
-  .dml-stat-grid,
-  .dml-process-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dml-equipment-card img,
-  .dml-feature-image img {
-    height: 250px;
-  }
-}
-/* =========================
-   NEXTGEN FEDERAL SYSTEMS PAGE - UPDATED
+   NEXTGEN FEDERAL SYSTEMS PAGE
 ========================= */
 
 .nxg-page {
   max-width: 1150px;
 }
-
-/* Hero */
 
 .nxg-hero {
   background:
@@ -1618,8 +1354,6 @@ footer {
   font-weight: 700;
 }
 
-/* Stats */
-
 .nxg-stat-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1649,8 +1383,6 @@ footer {
   font-size: 14px;
   font-weight: 700;
 }
-
-/* Overview split */
 
 .nxg-split-section {
   display: grid;
@@ -1687,8 +1419,6 @@ footer {
   color: #d1d5db;
   margin-bottom: 0;
 }
-
-/* Process */
 
 .nxg-process-section {
   background: #0f172a;
@@ -1737,8 +1467,6 @@ footer {
   margin-bottom: 0;
 }
 
-/* Section heading */
-
 .nxg-section-heading {
   margin-bottom: 20px;
 }
@@ -1755,8 +1483,6 @@ footer {
 .nxg-section-heading h2 {
   margin-top: 0;
 }
-
-/* Work cards */
 
 .nxg-work-section {
   margin-top: 32px;
@@ -1851,8 +1577,6 @@ footer {
   font-size: 15px;
 }
 
-/* Skills */
-
 .nxg-skills-section {
   background:
     radial-gradient(circle at bottom right, rgba(20, 184, 166, 0.18), transparent 38%),
@@ -1893,8 +1617,6 @@ footer {
   font-size: 16px;
 }
 
-/* Why / closing */
-
 .nxg-why-section {
   background: white;
   border: 1px solid #e5e7eb;
@@ -1928,48 +1650,6 @@ footer {
   margin-top: 0;
 }
 
-/* Mobile */
-
-@media (max-width: 1000px) {
-  .nxg-process-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .nxg-stat-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  .nxg-split-section {
-    grid-template-columns: 1fr;
-  }
-
-  .nxg-work-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 800px) {
-  .nxg-hero {
-    padding: 30px;
-  }
-
-  .nxg-hero h1 {
-    font-size: 36px;
-  }
-
-  .nxg-skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .nxg-stat-grid,
-  .nxg-process-grid {
-    grid-template-columns: 1fr;
-  }
-}
 /* =========================
    VALVELESS PULSEJET PAGE
 ========================= */
@@ -1977,8 +1657,6 @@ footer {
 .pulsejet-page {
   max-width: 1150px;
 }
-
-/* Hero */
 
 .pulsejet-hero {
   background:
@@ -2032,8 +1710,6 @@ footer {
   font-weight: 700;
 }
 
-/* Feature image */
-
 .pulsejet-photo-feature {
   display: grid;
   grid-template-columns: 1fr 0.85fr;
@@ -2076,8 +1752,6 @@ footer {
   line-height: 1.4;
 }
 
-/* Stats */
-
 .pulsejet-stat-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -2085,7 +1759,8 @@ footer {
   margin-bottom: 28px;
 }
 
-.pulsejet-stat-card {
+.pulsejet-stat-card,
+.pulsejet-analysis-stats div {
   background: #111827;
   color: white;
   border: 1px solid #1f2937;
@@ -2094,7 +1769,8 @@ footer {
   box-shadow: 0 8px 22px rgba(15, 23, 42, 0.18);
 }
 
-.pulsejet-stat-card strong {
+.pulsejet-stat-card strong,
+.pulsejet-analysis-stats strong {
   display: block;
   font-size: 26px;
   line-height: 1.1;
@@ -2102,13 +1778,19 @@ footer {
   margin-bottom: 6px;
 }
 
-.pulsejet-stat-card span {
+.pulsejet-stat-card span,
+.pulsejet-analysis-stats span {
   color: #d1d5db;
   font-size: 14px;
   font-weight: 700;
 }
 
-/* Split overview */
+.pulsejet-analysis-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 24px 0 28px 0;
+}
 
 .pulsejet-split-section {
   display: grid;
@@ -2145,8 +1827,6 @@ footer {
   color: #d1d5db;
   margin-bottom: 0;
 }
-
-/* Process */
 
 .pulsejet-process-section {
   background: #0f172a;
@@ -2195,8 +1875,6 @@ footer {
   margin-bottom: 0;
 }
 
-/* Headings */
-
 .pulsejet-section-heading {
   margin-bottom: 20px;
 }
@@ -2214,24 +1892,40 @@ footer {
   margin-top: 0;
 }
 
-/* Media */
-
 .pulsejet-media-section,
 .pulsejet-gallery-section,
 .pulsejet-analysis-section,
+.pulsejet-math-section,
 .pulsejet-challenges-section {
   margin-top: 32px;
   margin-bottom: 28px;
 }
 
+.pulsejet-analysis-section {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.pulsejet-analysis-section > p {
+  margin-bottom: 24px;
+}
+
 .pulsejet-media-grid,
 .pulsejet-gallery-grid,
 .pulsejet-cfd-grid,
+.pulsejet-math-grid,
 .pulsejet-challenge-grid,
 .pulsejet-skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+}
+
+.pulsejet-math-grid {
+  margin-top: 28px;
 }
 
 .pulsejet-media-card,
@@ -2246,13 +1940,46 @@ footer {
   margin: 0;
 }
 
-.pulsejet-media-card video,
-.pulsejet-gallery-card img,
-.pulsejet-cfd-card img {
+.pulsejet-math-card {
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+  margin: 0;
+}
+
+.featured-pulsejet-card {
+  border-color: #f97316;
+}
+
+.pulsejet-media-card video {
   width: 100%;
   height: 300px;
   object-fit: cover;
   display: block;
+}
+
+.pulsejet-gallery-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.pulsejet-cfd-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  background: #c5ccd6;
+  padding: 8px;
+}
+
+.pulsejet-math-card img {
+  width: 100%;
+  display: block;
+  background: #f8fafc;
 }
 
 .pulsejet-media-card div {
@@ -2281,41 +2008,22 @@ footer {
   margin-bottom: 0;
 }
 
-.featured-pulsejet-card {
-  border-color: #f97316;
-}
-
 .pulsejet-gallery-card figcaption,
 .pulsejet-cfd-card figcaption {
   color: #d1d5db;
   padding: 0 20px 20px 20px;
 }
 
-.pulsejet-analysis-section {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+.pulsejet-math-card figcaption {
+  padding: 18px 20px 22px 20px;
+  color: #334155;
+  line-height: 1.7;
+  font-size: 15px;
 }
 
-.pulsejet-analysis-section > p {
-  margin-bottom: 24px;
+.pulsejet-math-card strong {
+  color: #0f172a;
 }
-
-.pulsejet-placeholder {
-  min-height: 300px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #0f172a;
-  color: #fb923c;
-  font-weight: 800;
-  padding: 20px;
-}
-
-/* Challenges / skills */
 
 .pulsejet-challenge-grid div,
 .pulsejet-skills-grid div {
@@ -2356,8 +2064,6 @@ footer {
   color: white;
 }
 
-/* Closing */
-
 .pulsejet-closing-section {
   background: white;
   border: 1px solid #e5e7eb;
@@ -2378,136 +2084,209 @@ footer {
   font-size: 17px;
 }
 
-/* Mobile */
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background: #111827;
+  color: white;
+}
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 1000px) {
-  .pulsejet-process-grid,
-  .pulsejet-stat-grid {
+  .mom-process-grid,
+  .dml-process-grid,
+  .nxg-process-grid,
+  .pulsejet-process-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .mom-stat-grid,
+  .dml-stat-grid,
+  .nxg-stat-grid,
+  .pulsejet-stat-grid,
+  .pulsejet-analysis-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dml-photo-feature,
   .pulsejet-photo-feature {
     grid-template-columns: 1fr;
   }
 
+  .dml-feature-image img,
   .pulsejet-feature-image img {
     height: 320px;
   }
 }
 
 @media (max-width: 900px) {
-  .pulsejet-split-section,
+  .report-grid,
+  .dml-equipment-grid,
+  .nxg-work-grid,
   .pulsejet-media-grid,
   .pulsejet-gallery-grid,
   .pulsejet-cfd-grid,
+  .pulsejet-math-grid,
   .pulsejet-challenge-grid,
   .pulsejet-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-card.final-report {
+    grid-column: auto;
+  }
+
+  .mom-split-section,
+  .dml-split-section,
+  .nxg-split-section,
+  .pulsejet-split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .final-metrics {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 800px) {
+  .certifications-page .cert-card {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-media {
+    justify-self: start;
+    max-width: 360px;
+  }
+
+  .cert-subgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-subgrid .cert-media {
+    max-width: 360px;
+    justify-self: start;
+  }
+
+  .project-hero-detail,
+  .mom-hero,
+  .dml-hero,
+  .nxg-hero,
   .pulsejet-hero {
     padding: 30px;
   }
 
+  .project-hero-detail h1,
+  .mom-hero h1,
+  .dml-hero h1,
+  .nxg-hero h1,
   .pulsejet-hero h1 {
     font-size: 36px;
+  }
+
+  .mom-skills-grid,
+  .dml-skills-grid,
+  .nxg-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+
+  .nav-links {
+    margin-top: 16px;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    margin: 8px 14px 0 0;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+    max-width: none;
+    margin-bottom: 95px;
+  }
+
+  .about-text {
+    max-width: none;
+  }
+
+  .about-image {
+    justify-content: flex-start;
+  }
+
+  .profile-photo {
+    width: 200px !important;
+    max-width: 200px !important;
+    height: 250px !important;
+  }
+
+  .about-image img {
+    width: 200px;
+    max-width: 200px;
+    height: 250px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-info {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    padding: 16px 8%;
+  }
+
+  .detail-page h1 {
+    font-size: 34px;
+  }
+
+  .report-card {
+    padding: 22px;
   }
 }
 
 @media (max-width: 600px) {
+  .mom-stat-grid,
+  .mom-process-grid,
+  .dml-stat-grid,
+  .dml-process-grid,
+  .nxg-stat-grid,
+  .nxg-process-grid,
   .pulsejet-stat-grid,
-  .pulsejet-process-grid {
+  .pulsejet-process-grid,
+  .pulsejet-analysis-stats {
     grid-template-columns: 1fr;
   }
 
+  .dml-equipment-card img,
+  .dml-feature-image img,
   .pulsejet-media-card video,
   .pulsejet-gallery-card img,
   .pulsejet-cfd-card img,
   .pulsejet-feature-image img {
     height: 250px;
-  }
-}
-/* =========================
-   PULSEJET ANALYSIS STATS + MATLAB PLOTS
-========================= */
-
-.pulsejet-analysis-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin: 24px 0 28px 0;
-}
-
-.pulsejet-analysis-stats div {
-  background: #111827;
-  color: white;
-  border: 1px solid #1f2937;
-  border-radius: 16px;
-  padding: 18px;
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.14);
-}
-
-.pulsejet-analysis-stats strong {
-  display: block;
-  color: #fb923c;
-  font-size: 24px;
-  margin-bottom: 6px;
-}
-
-.pulsejet-analysis-stats span {
-  color: #d1d5db;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.pulsejet-math-section {
-  margin-top: 56px;
-}
-
-.pulsejet-math-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin-top: 28px;
-}
-
-.pulsejet-math-card {
-  background: #ffffff;
-  border: 1px solid #dbe3ef;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
-}
-
-.pulsejet-math-card img {
-  width: 100%;
-  display: block;
-  background: #f8fafc;
-}
-
-.pulsejet-math-card figcaption {
-  padding: 18px 20px 22px 20px;
-  color: #334155;
-  line-height: 1.7;
-  font-size: 15px;
-}
-
-.pulsejet-math-card strong {
-  color: #0f172a;
-}
-
-@media (max-width: 900px) {
-  .pulsejet-analysis-stats,
-  .pulsejet-math-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .pulsejet-analysis-stats,
-  .pulsejet-math-grid {
-    grid-template-columns: 1fr;
   }
 }
