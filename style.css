@@ -2702,3 +2702,30 @@ footer {
     height: 250px;
   }
 }
+.pulsejet-wide-media-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: stretch;
+}
+
+.pulsejet-wide-media-card video {
+  height: 360px;
+}
+
+.pulsejet-wide-media-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .pulsejet-wide-media-card {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .pulsejet-wide-media-card video {
+    height: 300px;
+  }
+}
