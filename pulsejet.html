@@ -268,13 +268,13 @@
         </div>
 
         <div>
-          <strong>61.68 Hz</strong>
-          <span>Estimated hot resonance frequency</span>
+          <strong>36.12 Hz</strong>
+          <span>Cold resonance estimate</span>
         </div>
 
         <div>
-          <strong>1.95 lbf</strong>
-          <span>Baseline estimated hot thrust at 15 psi model input</span>
+          <strong>61.68 Hz</strong>
+          <span>Hot operating resonance estimate</span>
         </div>
       </div>
 
@@ -393,48 +393,115 @@
       </div>
     </section>
 
-    <section class="pulsejet-challenges-section">
+    <section class="pulsejet-troubleshooting-section">
       <div class="pulsejet-section-heading">
-        <p>Engineering Challenges</p>
-        <h2>What Had to Be Diagnosed</h2>
+        <p>Troubleshooting and Iteration</p>
+        <h2>Using test results to move from “it pulses” toward controlled operation.</h2>
       </div>
 
-      <div class="pulsejet-challenge-grid">
-        <div>
-          <h3>Airflow Availability</h3>
+      <p>
+        The most valuable part of this project was the troubleshooting process after the first
+        ignition and assisted-air tests. Rather than treating the prototype as a pass/fail build,
+        I compared the test behavior against MATLAB estimates and literature-style pulsejet
+        operating expectations to identify likely limits in fuel delivery, airflow availability,
+        and resonance matching.
+      </p>
+
+      <div class="pulsejet-troubleshooting-grid">
+
+        <article>
+          <span>Fuel Delivery Bottleneck</span>
+          <h3>The original regulator limited the test condition.</h3>
           <p>
-            Stationary testing showed that available inlet airflow was a major factor in
-            combustion behavior. Assisted airflow improved the ability to evaluate pulsing
-            behavior and helped identify airflow as a key design variable.
+            During testing, I found that the propane regulator was only supplying about
+            <strong>11 psi</strong>. This limited the fuel delivery range and helped explain why
+            the engine could produce pulsing behavior but struggled to sustain consistently
+            without assisted airflow.
+          </p>
+        </article>
+
+        <article>
+          <span>System Upgrade</span>
+          <h3>The fuel system was upgraded for a higher controlled range.</h3>
+          <p>
+            To remove the regulator as a limiting variable, I upgraded the fuel delivery system
+            to support a controlled range of approximately <strong>50–85 psi</strong>. This made
+            the next test iteration more meaningful because the fuel system could better match
+            the operating range I wanted to evaluate.
+          </p>
+        </article>
+
+        <article>
+          <span>Ideal-Engine Comparison</span>
+          <h3>The modeled resonance was close to a realistic pulsejet operating range.</h3>
+          <p>
+            MATLAB estimated a cold resonance of <strong>36.12 Hz</strong> and a hot operating
+            resonance of approximately <strong>61.68 Hz</strong>. Since many larger pulsejet-style
+            engines operate in the tens-of-Hz range, this gave confidence that the geometry was
+            producing a reasonable acoustic target even though airflow and fueling still needed
+            refinement.
+          </p>
+        </article>
+
+        <article>
+          <span>Airflow Coupling</span>
+          <h3>Assisted airflow exposed a key design dependency.</h3>
+          <p>
+            The blower-assisted test showed that additional airflow improved pulsing behavior.
+            Combined with the fuel delivery findings, this suggested that stable operation depended
+            on matching fuel input, available air mass flow, and the engine’s acoustic behavior.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="pulsejet-equations-section">
+      <div class="pulsejet-section-heading">
+        <p>Analysis Methods</p>
+        <h2>Equations Used to Connect Geometry, Flow, and Performance</h2>
+      </div>
+
+      <p>
+        I used first-order engineering relationships to connect the physical geometry to expected
+        behavior. These calculations were not intended to replace full reacting-flow combustion
+        modeling, but they helped guide the design, testing, and troubleshooting process.
+      </p>
+
+      <div class="pulsejet-equation-grid">
+
+        <div>
+          <h3>Speed of Sound</h3>
+          <p class="equation">a = √(γRT)</p>
+          <p>
+            Used to estimate how gas temperature changes acoustic wave speed inside the engine.
           </p>
         </div>
 
         <div>
-          <h3>Resonance and Length Tuning</h3>
+          <h3>Resonance Estimate</h3>
+          <p class="equation">f ≈ a / 4L<sub>eff</sub></p>
           <p>
-            The engine behavior suggested that pipe length, chamber geometry, and flow path
-            layout needed to be considered together because the system depends on unsteady
-            pressure-wave behavior.
+            Used as a simplified model for comparing effective path length to expected pulsing frequency.
           </p>
         </div>
 
         <div>
-          <h3>Fuel Delivery</h3>
+          <h3>Air Requirement</h3>
+          <p class="equation">ṁ<sub>air</sub> = ṁ<sub>fuel</sub> · AFR</p>
           <p>
-            Fuel delivery location and direction were important to evaluate because they
-            affected mixing, ignition behavior, and how consistently the engine produced
-            pulsing combustion.
+            Used to estimate the air mass flow required for propane combustion at different mixture assumptions.
           </p>
         </div>
 
         <div>
-          <h3>Geometry Losses</h3>
+          <h3>Thrust Estimate</h3>
+          <p class="equation">F ≈ ṁV<sub>e</sub> + (p<sub>e</sub> − p<sub>a</sub>)A<sub>e</sub></p>
           <p>
-            The intake path, bend, transitions, and tailpipe geometry all influence flow
-            restriction and pressure recovery, making geometry refinement a major part of
-            the design process.
+            Used as a first-order way to estimate thrust trends from mass flow, exhaust velocity, and pressure difference.
           </p>
         </div>
+
       </div>
     </section>
 
@@ -481,8 +548,8 @@
       <p>
         The biggest value of this project was the full engineering loop: design the concept,
         analyze expected behavior, build the hardware, test it, diagnose the limiting factors,
-        and decide what should change next. That design-build-test iteration is exactly the
-        kind of engineering work I want to keep developing.
+        upgrade the limiting subsystem, and decide what should change next. That design-build-test
+        iteration is exactly the kind of engineering work I want to keep developing.
       </p>
     </section>
 
