@@ -2372,3 +2372,400 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   ACE CNC / AIR ENGINE PAGE
+========================= */
+
+.ace-page {
+  max-width: 1150px;
+}
+
+.ace-hero {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.35), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(239, 68, 68, 0.20), transparent 36%),
+    linear-gradient(135deg, #0b1220 0%, #111827 55%, #020617 100%);
+  color: white;
+  padding: 44px;
+  border-radius: 22px;
+  margin-bottom: 24px;
+  border: 1px solid #1f2937;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.28);
+}
+
+.ace-kicker {
+  color: #ef4444 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 13px !important;
+  font-weight: 800;
+  margin-bottom: 10px !important;
+}
+
+.ace-hero h1 {
+  color: white;
+  font-size: 48px;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+
+.ace-lead {
+  max-width: 900px;
+  font-size: 19px !important;
+  color: #d1d5db;
+  margin-bottom: 26px !important;
+}
+
+.ace-hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ace-hero-pills span {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  border: 1px solid rgba(239, 68, 68, 0.28);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ace-photo-feature {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 28px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 28px;
+  align-items: center;
+}
+
+.ace-feature-text h2 {
+  font-size: 34px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.ace-feature-image {
+  margin: 0;
+}
+
+.ace-feature-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  display: block;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+}
+
+.ace-feature-image figcaption {
+  margin-top: 10px;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.ace-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.ace-stat-card {
+  background: #111827;
+  color: white;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.18);
+}
+
+.ace-stat-card strong {
+  display: block;
+  font-size: 26px;
+  line-height: 1.1;
+  color: #ef4444;
+  margin-bottom: 6px;
+}
+
+.ace-stat-card span {
+  color: #d1d5db;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ace-split-section {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 24px;
+  align-items: stretch;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+  margin-bottom: 28px;
+}
+
+.ace-split-section h2 {
+  margin-top: 0;
+}
+
+.ace-callout {
+  background: #0f172a;
+  color: white;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #1f2937;
+}
+
+.ace-callout h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.ace-callout p {
+  color: #d1d5db;
+  margin-bottom: 0;
+}
+
+.ace-process-section {
+  background: #0f172a;
+  color: white;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #1f2937;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.22);
+  margin-bottom: 28px;
+}
+
+.ace-process-section h2 {
+  color: white;
+  margin-top: 0;
+}
+
+.ace-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.ace-process-grid div {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.ace-process-grid span {
+  display: inline-block;
+  color: #ef4444;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.ace-process-grid h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.ace-process-grid p {
+  color: #cbd5e1;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.ace-section-heading {
+  margin-bottom: 20px;
+}
+
+.ace-section-heading p {
+  color: #ef4444;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.ace-section-heading h2 {
+  margin-top: 0;
+}
+
+.ace-equipment-section,
+.ace-work-section {
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+
+.ace-equipment-grid,
+.ace-work-grid,
+.ace-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.ace-equipment-card {
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.96), rgba(17, 24, 39, 1));
+  border: 1px solid #263244;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.22);
+  margin: 0;
+}
+
+.featured-ace-card {
+  border-color: #ef4444;
+}
+
+.ace-equipment-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.ace-equipment-card figcaption {
+  padding: 24px;
+}
+
+.ace-equipment-card span,
+.ace-work-card span {
+  display: inline-block;
+  color: #ef4444;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.ace-equipment-card h3,
+.ace-work-card h3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.ace-equipment-card p,
+.ace-work-card p {
+  color: #d1d5db;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.ace-work-card,
+.ace-skills-grid div {
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.96), rgba(17, 24, 39, 1));
+  border: 1px solid #263244;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.18);
+}
+
+.ace-skills-section {
+  background:
+    radial-gradient(circle at bottom right, rgba(239, 68, 68, 0.18), transparent 38%),
+    linear-gradient(180deg, #111827 0%, #0f172a 100%);
+  border: 1px solid #1f2937;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.22);
+  margin-top: 28px;
+}
+
+.ace-skills-section h2 {
+  color: white;
+}
+
+.ace-skills-grid h3 {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.ace-skills-grid p {
+  color: #d1d5db;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.ace-closing-section {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 34px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-top: 28px;
+}
+
+.ace-closing-section h2 {
+  font-size: 34px;
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #111827;
+}
+
+.ace-closing-section p {
+  font-size: 17px;
+}
+
+@media (max-width: 1000px) {
+  .ace-process-grid,
+  .ace-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ace-photo-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .ace-feature-image img {
+    height: 330px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ace-split-section,
+  .ace-equipment-grid,
+  .ace-work-grid,
+  .ace-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .ace-hero {
+    padding: 30px;
+  }
+
+  .ace-hero h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ace-stat-grid,
+  .ace-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ace-equipment-card img,
+  .ace-feature-image img {
+    height: 260px;
+  }
+}
