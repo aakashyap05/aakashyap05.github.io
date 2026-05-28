@@ -2429,3 +2429,85 @@ footer {
     height: 250px;
   }
 }
+/* =========================
+   PULSEJET ANALYSIS STATS + MATLAB PLOTS
+========================= */
+
+.pulsejet-analysis-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 24px 0 28px 0;
+}
+
+.pulsejet-analysis-stats div {
+  background: #111827;
+  color: white;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.14);
+}
+
+.pulsejet-analysis-stats strong {
+  display: block;
+  color: #fb923c;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.pulsejet-analysis-stats span {
+  color: #d1d5db;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pulsejet-math-section {
+  margin-top: 56px;
+}
+
+.pulsejet-math-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.pulsejet-math-card {
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+.pulsejet-math-card img {
+  width: 100%;
+  display: block;
+  background: #f8fafc;
+}
+
+.pulsejet-math-card figcaption {
+  padding: 18px 20px 22px 20px;
+  color: #334155;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.pulsejet-math-card strong {
+  color: #0f172a;
+}
+
+@media (max-width: 900px) {
+  .pulsejet-analysis-stats,
+  .pulsejet-math-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pulsejet-analysis-stats,
+  .pulsejet-math-grid {
+    grid-template-columns: 1fr;
+  }
+}
